@@ -8,7 +8,7 @@
         <th>Date</th>
         <th>Time</th>
         <th>Address</th>
-        <th></th>
+        <th>Actions</th>
       </tr>
     </thead>
     <tbody>
@@ -18,7 +18,7 @@
         <td>{{event.time}}</td>
         <td>{{event.location}}</td>
         <td>
-
+          <button class="btn btn-info"><i class="fa fa-eye" [routerLink]="['/', 'event', event.id]"></i></button>
         </td>
       </tr>
     </tbody>
